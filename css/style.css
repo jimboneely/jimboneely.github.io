@@ -1,0 +1,103 @@
+body{
+	margin:0;
+	
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+}
+
+.footer {
+  height: 70px;
+  background-color: #666666;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 6;
+  text-align: center;
+  color: #ffffff;
+}
+
+.wrapper{
+	min-width: 1000px;
+}
+
+.socialMedia{
+	border: solid;
+	border-width: 2px;
+	border-color: #dddddd;
+	padding: 20px 20px 20px 20px;
+	width: 100px;
+	margin-right: 100px;
+	margin-top: 30px;
+	display: inline-block;
+	background-color: #ffffff;
+	vertical-align: top;
+	width:27vw;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	
+}
+.main-bio{
+	border:solid;
+	border-width: 2px;
+	border-color: #dddddd;
+	padding: 20px 20px 20px 20px;
+	max-width: 400px;
+	margin-left: 100px;
+	margin-top: 30px;
+	display: inline-block;
+	background-color: #ffffff;
+	width: 50vw;
+	z-index: 2;
+}
+
+.profile {
+	height: 200px;
+	width: 200px;
+}
+
+.container{
+	background-image: url("../images/concrete_seamless.png");
+	background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+a{
+	text-decoration: none
+}
+
+header{
+	margin:0px;
+	padding: 0px;
+	height: 60px;
+	border-bottom: solid;
+	border-width: 2px;
+	border-color: #dddddd;
+	background-color: #ffffff
+}
+
+.guide {
+	margin-left: 700px;
+}
+
+h1{
+	margin:0px;
+	padding: 0px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	width:220px;
+	height:100%;
+	margin-left: 100px;
+	text-align: center
+}
+
+h2{
+	color: #4aaaa5;
+}
+
+hr{
+	   border: 1px solid #dddddd;
+
+}
