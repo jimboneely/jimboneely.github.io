@@ -3,14 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Basic Portfolio</title>
 </head>
 
 <body style="background-image:url(images/concrete_seamless.png); 
-  background-size: 100%;
-  /*background-repeat: no-repeat;*/"">
+  background-size: 100%; 
+  background-repeat: no-repeat;"">
   <div class="content">
   <header>
     <h1 style="border-radius: 1em">James G Neely</h1>
@@ -28,22 +27,26 @@
       </ul>
     </div>
   </header>
-    
-    <div class="wrapper">
 
-      <div class="main-bio">
+  <div class="wrapper">
 
-        <h2>About Me</h2>
+    <section class="entry">
 
-        <hr>
-        <img class="profile" src="images/james.jpg" alt="James G Neely">
+      <h2>Contact</h2>
 
-        <p>I am a musician, engineer and all around nerd! I have always brought passion, dedication and a desire to learn and improve to the workplace. I hope that one day we will work together!</a></p>
-      </div>
+      <form>
+	<h3>Name</h3>
+	<input type="text" class="textbox" placeholder="Jane Doe"><br/>
+	<h3>Email</h3>
+	<input type="email" class="textbox" placeholder="example@gmail.com"> <br/>
+	<h3>Message</h3>
+	<input type="text" class="textbox" id="message"> <br/>
+	<input type="button" name="submit" value="submit">
 
-    
-    
-      <div class="socialMedia">
+</form>
+    </section>
+
+          <div class="socialMedia">
         <h2>Connect With Me</h2>
         <hr>
         <table>
@@ -65,7 +68,7 @@
       </div>
     </div>
   </div>
-  <footer class="footer">James G Neely © 2017 </footer>
+<footer class="footer">James G Neely © 2017 </footer>
 </body>
 
 </html>

@@ -3,6 +3,21 @@ body{
 	
 }
 
+.guide {
+	width: 300px;
+	margin: 0;
+	margin-top: 30px;
+	padding: 0;
+	float: right;
+	/*display: inline-block;*/
+}
+
+.guide li a{
+	color: #777777;
+	font-size: 18px;
+	padding: 0 10px;
+}
+
 .content {
   min-height: calc(100vh - 70px);
 }
@@ -16,10 +31,13 @@ body{
   z-index: 6;
   text-align: center;
   color: #ffffff;
+  border-top-color: #4aaaa5;
+  border-top-width: 5px;
+  border-top: solid;
 }
 
 .wrapper{
-	min-width: 1000px;
+	/*min-width: 1000px;*/
 }
 
 .socialMedia{
@@ -31,12 +49,14 @@ body{
 	margin-right: 100px;
 	margin-top: 30px;
 	display: inline-block;
+	float: right;
 	background-color: #ffffff;
 	vertical-align: top;
 	width:27vw;
 	position: absolute;
 	right: 0;
 	z-index: 2;
+	border-radius: 2em;
 	
 }
 .main-bio{
@@ -51,6 +71,23 @@ body{
 	background-color: #ffffff;
 	width: 50vw;
 	z-index: 2;
+	border-radius: 2em;
+}
+
+.entry{
+	border:solid;
+	border-width: 2px;
+	border-color: #dddddd;
+	padding: 20px 20px 20px 20px;
+	max-width: 400px;
+	max-height: 400px;
+	margin-left: 100px;
+	margin-top: 30px;
+	display: inline-block;
+	background-color: #ffffff;
+	width: 50vw;
+	z-index: 2;
+	border-radius: 2em;
 }
 
 .profile {
@@ -58,10 +95,55 @@ body{
 	width: 200px;
 }
 
+.portfolio{
+	height: 150px;
+	width: 150px;
+}
+
+.skill{
+	position: relative;
+	top: -60px;
+	width: 280px
+	height: 40px;
+	background-color: #4aaaa5;
+	border-radius: 10px;
+	color: #ffffff;
+	text-align: center;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 40px;
+}
+
 .container{
 	background-image: url("../images/concrete_seamless.png");
 	background-size: 100% 100%;
     background-attachment: fixed;
+}
+
+.textbox{
+	width: 380px;
+	height: 20px;
+	border: 1px solid;
+	padding-left: 20px;
+	padding-top: 10px;
+
+}
+
+#message{
+	width: 380px;
+	height: 80px;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	float:right;
+	border-left: 1px solid;
+	margin: 0;
+	padding: 0;
 }
 
 a{
@@ -71,16 +153,13 @@ a{
 header{
 	margin:0px;
 	padding: 0px;
-	height: 60px;
+	height: 80px;
 	border-bottom: solid;
 	border-width: 2px;
 	border-color: #dddddd;
 	background-color: #ffffff
 }
 
-.guide {
-	margin-left: 700px;
-}
 
 h1{
 	margin:0px;
@@ -90,14 +169,136 @@ h1{
 	width:220px;
 	height:100%;
 	margin-left: 100px;
-	text-align: center
+	text-align: center;
+	display: inline-block;
 }
 
 h2{
 	color: #4aaaa5;
 }
 
+h3{
+	margin: 0px;
+	color: #777777;
+}
+
+p{
+	color: #777777;
+}
+
 hr{
 	   border: 1px solid #dddddd;
 
 }
+
+@media only screen and (max-width: 640px) {
+     header {
+        width:100%;
+    	position:fixed;
+    	top:0px;
+    	background-color: #4aaaa5;
+
+    }
+    	.wrapper{
+		min-width: 0px;
+}
+
+    	.socialMedia{
+    		/*margin-left: 200px;*/
+    		margin-right: 0px;
+    		margin-top: 0px;
+    		z-index: 0;
+    		width: 80vw;
+    		float: right;
+    		clear: both;
+    		/*float: right;*/
+    		/*position: fixed;*/
+    	}
+
+    	.guide{
+    		width: 100%;
+    		display: inline-block;
+    		justify-content: center;
+    		background-color: white;
+    		height: 100%;
+    		margin-top: 0px;
+    		margin-left: 0px;
+    		float: left;
+
+    	}
+
+    	.main-bio{
+    		margin-top: 200px;
+    		display: block;
+    		width: 100%;
+    		margin-left: 5px;
+    		z-index: 0;
+    	}
+
+    	a{
+    		padding:10px;
+    	}
+
+    	li{
+    		border-left: none;
+    		float: left;
+    	}
+
+    	ul{
+    		text-align: center;
+    	}
+
+
+    }
+
+/*    p{
+    	color: red;
+    }*/
+
+
+@media only screen and (max-width: 768px) {
+  		
+  		header {
+        width:100%;
+    	position:fixed;
+    	top:0px;
+
+    }
+
+        .socialMedia{
+    		/*margin-left: 200px;*/
+    		margin-right: 0px;
+    		margin-top: 0px;
+    		z-index: 0;
+    		width: 80vw;
+    		float: right;
+    		clear: both;
+    		/*float: right;*/
+    		/*position: fixed;*/
+    	}
+    	.main-bio{
+    		display: block;
+    		width: 100%;
+    		margin-left: 5px;
+    		z-index: 0;
+    	}
+
+    	.wrapper{
+		min-width: 0px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+     
+        header {
+        width:100%;
+    	position:fixed;
+    	top:0px;
+    }
+
+		.wrapper{
+			margin-top: 80px;
+		}
+    
+}
+
